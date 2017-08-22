@@ -1,0 +1,21 @@
+{
+  "name": "Emotions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "watch": "watchify client/assets/js/script.js -o client/assets/js/app.js -v",
+    "build": "browserify client/assets/js/script.js -o client/assets/js/app.js",
+    "start": "npm run watch & nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browserify": "^14.4.0",
+    "browserify-middleware": "^7.1.0",
+    "express": "^4.15.4",
+    "package.json": "^2.0.1",
+    "path": "^0.12.7"
+  }
+}
